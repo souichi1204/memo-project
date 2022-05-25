@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{%block header%}
+{%endblock header%}
+
+{% block content %}
+  {% for object in object_list %}
+      <p>{{object}}</p>
+  {% endfor %}
+
+{%endblock content%}
+
+{% block footer %}
+{% endblock footer %}
