@@ -51,6 +51,10 @@ p{
     padding: 2rem 1rem;
 }
 
+.New_create_res{
+    display: none;
+}
+
 
 a:link, a:visited,  a:active {
     color: #fff;
@@ -235,6 +239,7 @@ h3{
     
 }
 .New_create_res{
+    display: block;
     position: fixed;
     bottom: 1rem; 
     right: 0rem;
