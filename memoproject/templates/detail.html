@@ -4,9 +4,31 @@
 {% endblock header %}
 
 {% block content %}
-  {{object.タイトル}}
-  {{object.本文}}
+<div class="inner">
+  <div class="content">
+    <h2>{{object.タイトル}}</h2>  
+    <div class="main_content">
+      <p>{{object.本文}}</p>
+    </div>
+    
+  </div>
+</div>
   
+  
+
+  <div class="flex_btn">
+    
+    <div class="btn_update">
+      <a href="{% url 'update' object.pk %}" >修正する</a>
+    </div>
+    
+    <div class="btn_delete">
+      <a href="{% url 'delete' object.pk %}">削除する</a>
+    </div>
+    <div class="btn_list">
+      <a href="{% url 'list' %}">リストに戻る</a>
+    </div>
+  </div>
 {% endblock content %}
 
 {% block footer %}

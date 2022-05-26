@@ -1,12 +1,18 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView,DetailView,DeleteView,UpdateView
+from django.views.generic import ListView,DetailView,DeleteView,UpdateView,CreateView
 from .models import Memomodel
 
 # Create your views here.
 class Memolist(ListView):
     template_name='list.html'
     model=Memomodel
+
+class Memocreate(CreateView):
+    template_name='create.html'
+    model=Memomodel
+    fields=['タイトル','本文']
+    success_url=reverse_lazy('list')
 
 class Memodetail(DetailView):
     template_name='detail.html'

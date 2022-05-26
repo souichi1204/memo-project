@@ -4,10 +4,25 @@
 {%endblock header%}
 
 {% block content %}
-  {% for object in object_list %}
-      <p>{{object}}</p>
-  {% endfor %}
+  <section class="inner">
+    <div class="New_create New_create_btn">
+      <a href="{% url 'create' %}">新規作成</a>  
+    </div>
+    
+    {% for object in object_list %}
+      <div class="container">
+        <h2>{{object.タイトル}}</h2>
+        <p>作成した日付：{{object.作成した日付 | date:"o/n/d"}}</p>
+        <a href="{% url 'detail' object.pk %}"></a>
+      </div>
+    
+        {% endfor %}
+        <div class="New_create_res New_create_btn_res">
+          <a href="{% url 'create' %}">新規作成</a>  
+        </div>
 
+  </section>
+  
 {%endblock content%}
 
 {% block footer %}

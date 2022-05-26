@@ -5,8 +5,21 @@
 
 {% block content %}
   <form action='' method='POST'>{% csrf_token %}
-    {{form.as_p }}
-    <input type='submit' value='修正する'>
+    <p>タイトル：{{form.タイトル}}</p>
+    <p>本文：{{form.本文}}</p>
+  <div class="flex_btn_update_html">
+    <label for="update">
+      <div class="btn_update_html">
+        修正完了
+      </div>
+      <input type='submit' value='修正完了' hidden id="update">
+    </label>
+    <div class="btn_list_update_html">
+      <a href="{% url 'list' %}">listに戻る</a>
+    </div>
+  </div>
+    
+    
   </form>
 {% endblock content %}
 

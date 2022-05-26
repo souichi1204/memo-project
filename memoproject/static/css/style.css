@@ -1,0 +1,404 @@
+/* 全てに適用 */
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top:3rem ;
+    padding-bottom: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 20px;
+    margin: 40px;
+    border-bottom: 1px solid bisque;
+    overflow-wrap:anywhere;
+    
+}
+
+h3{
+    padding: 40px;
+    font-size: 1.5rem;
+}
+p{
+    line-height: 3rem;
+}
+.wrapper{
+    background-color: #F2F2F2;
+    min-height: 100vh;
+}
+
+.New_create{
+    position: fixed;
+    top: 1rem; 
+    right: 5rem;
+    z-index: 20;
+}
+
+.New_create_btn{
+    background-color: #f56500;
+    border-radius: 20px;
+}
+
+.New_create_btn:hover{
+    background-color: #a56800;
+    border-radius: 20px;
+}
+
+.New_create_btn a{
+    display: block;
+    
+    padding: 2rem 1rem;
+}
+
+
+a:link, a:visited,  a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+/* mainコンテンツ部分 */
+
+.inner{
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    max-width: 850px;
+}
+/* container部分 */
+.container{
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+.container a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+.container:hover{
+    box-shadow:10px 10px 2px black;
+}
+
+/* detail.html */
+.content{
+    background-color: white;
+    border-radius: 40px;
+    min-height: 50vh;
+}
+
+.main_content{
+    padding: 0 40px 40px 40px;
+    overflow-wrap:anywhere;
+}
+
+.flex_btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.btn_update{
+    background-color: #a56500;
+    border-radius: 20px;
+}
+
+.btn_update:hover{
+    background-color:#824C00;
+}
+
+.btn_delete{
+    background-color: #ea5550;
+    border-radius: 20px;
+    
+}
+.btn_delete:hover{
+    background-color: #aa5550;
+}
+
+.btn_list{
+    background-color: #f56500;
+    border-radius: 20px;
+    
+}
+.btn_list:hover{
+    background-color: #e67c1a;
+}
+
+.btn_update a{
+    display: block;
+   padding: 2rem 4rem;
+}
+.btn_list a{
+   display: block;
+   padding: 2rem 4rem;
+}
+.btn_delete a{
+   display: block;
+   padding: 2rem 4rem;
+}
+
+/* delete.html */
+.btn_delete_html{
+    background-color: #ea5550;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+.btn_delete_html:hover{
+    background-color: #aa5550;
+}
+
+.yokohaba_tiisaku{
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* update.html */
+.btn_update_html{
+    background-color: #a56500;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.btn_update_html:hover{
+    background-color:#824C00 ;
+}
+
+.btn_list_update_html{
+    background-color: #f56500;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+.btn_list_update_html:hover{
+    background-color:#e67c1a ;
+}
+
+.flex_btn_update_html{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 778px) {
+	/* 778px以下に適用されるCSS（スマホ用） */
+    /* 全てに適用 */
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top:3rem ;
+    padding-bottom: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 20px;
+    margin: 40px;
+    border-bottom: 1px solid bisque;
+    overflow-wrap:anywhere;
+    
+}
+
+h3{
+    padding: 40px;
+    font-size: 1.5rem;
+}
+.wrapper{
+    background-color: #F2F2F2;
+    min-height: 100vh;
+}
+
+.New_create{
+    display: none;
+    
+}
+.New_create_res{
+    position: fixed;
+    bottom: 1rem; 
+    right: 0rem;
+    z-index: 20;
+}
+
+.New_create_btn{
+    none
+}
+.New_create_btn_res{
+    background-color: #f56500;
+    border-radius: 20px;
+}
+
+.New_create_btn:hover{
+    background-color: #a56800;
+    border-radius: 20px;
+}
+
+.New_create_btn a{
+    none
+    
+}
+
+.New_create_btn_res a{
+    display: block;
+    padding: 2rem 1rem;
+}
+
+a:link, a:visited,  a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+/* mainコンテンツ部分 */
+
+.inner{
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 375px;
+}
+/* container部分 */
+.container{
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+.container a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+/* detail.html */
+.content{
+    background-color: white;
+    border-radius: 40px;
+    min-height: 50vh;
+}
+
+.main_content{
+    padding: 0 40px 40px 40px;
+    overflow-wrap:anywhere;
+}
+
+.flex_btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn_update{
+    background-color: #a56500;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.btn_update:hover{
+    background-color:#824C00;
+}
+
+.btn_delete{
+    background-color: #ea5550;
+    border-radius: 20px;
+    
+}
+.btn_delete:hover{
+    background-color: #aa5550;
+}
+
+.btn_list{
+    background-color: #f56500;
+    border-radius: 20px;
+    margin: 20px;
+}
+.btn_list:hover{
+    background-color: #e67c1a;
+}
+
+.btn_update a{
+    display: block;
+   padding: 2rem 4rem;
+}
+.btn_list a{
+   display: block;
+   padding: 2rem 4rem;
+}
+.btn_delete a{
+   display: block;
+   padding: 2rem 4rem;
+}
+
+/* delete.html */
+.btn_delete_html{
+    background-color: #ea5550;
+    
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.yokohaba_tiisaku{
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* update.html */
+.btn_update_html{
+    max-width: 150px;
+    margin: 0 auto;
+    background-color: #FFF2B0;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    
+}
+
+.btn_list_update_html{
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #f56500;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.flex_btn_update_html{
+    display: block;
+}
+
+}
